@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: Debug
+# key: dbgg
+# --
+template<typename A, typename B> ostream& operator<<(ostream &os, const pair<A, B> &p) { return os << '(' << p.first << "," << p.second << ')'; }
+template<typename X,typename T=typename enable_if<!is_same<X,string>::value,typename X::value_type>::type>ostream& operator<<(ostream &o,const X &v){o<<'{';string s;for(const T &x:v)o<<s<<x,s=", ";return o<<'}';}
+void deb() { cout << "\n"; }
+template <typename Head, typename... Tail>void deb(Head H, Tail... T){cout << H; if (sizeof...(T) > 0) cout << ' '; deb(T...);}
+#ifdef LOCAL
+#define dbg(...) cerr << "[" << #__VA_ARGS__ << "]:", deb(__VA_ARGS__)
+#else
+#define dbg(...)
+#endif

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: long long
+# key: usell
+# --
+using ll = long long;

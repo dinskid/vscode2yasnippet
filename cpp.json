@@ -1,0 +1,432 @@
+{
+  "CP Template": {
+    "prefix": "cpp",
+    "body": [
+      "#include <bits/stdc++.h>",
+      "using namespace std;",
+      "// clang-format off",
+      "template <typename A, typename B> ostream& operator<<(ostream& os, const pair<A, B>& p) { return os << '(' << p.first << ' ' << p.second << ')'; }", 
+      "template <typename X, typename T = typename enable_if<!is_same<X, string>::value, typename X::value_type>::type> ostream& operator<<(ostream& o, const X& v) { string s; for (const T& x : v) o << s << x, s = \" \"; return o; }",
+      "void deb() { cout << \"\\n\"; }",
+      "template <typename Head, typename... Tail> void deb(Head H, Tail... T) { cout << H; if (sizeof...(T) > 0) cout << ' '; deb(T...); }",
+      "#ifdef LOCAL",
+      "#define dbg(...) cout << \"[\" << #__VA_ARGS__ << \"]:\", deb(__VA_ARGS__)",
+      "#else",
+      "#define dbg(...)",
+      "#endif",
+      "// clang-format on",
+      "",
+      "void solve() {",
+      "\t$0",
+      "}",
+      "",
+      "int32_t main() {",
+      "\tios_base::sync_with_stdio(false);",
+      "\tcin.tie(NULL);",
+      "\tint T = 1;",
+      "\tcin >> T;",
+      "\twhile (T--) solve();",
+      "\treturn 0;",
+      "}"
+    ],
+    "description": "CP Template"
+  },
+  "intll": {
+    "prefix": "intll",
+    "body": "#define int long long"
+  },
+  "long long": {
+    "prefix": "usell",
+    "body": "using ll = long long;"
+  },
+  "solve fn": {
+    "prefix": "fnSOLVE",
+    "body": [
+      "void solve() {",
+      "\t$0",
+      "}"
+    ]
+  },
+  "solve": {
+    "prefix": "libSOLVE",
+    "body": [
+      "auto solve = [&]() -> void {",
+      "\t$0",
+      "}"
+    ]
+  },
+  "CP Template - No TCs": {
+    "prefix": "notccpp",
+    "body": [
+      "#include <bits/stdc++.h>",
+      "using namespace std;",
+      "// clang-format off",
+      "template <typename A, typename B>ostream& operator<<(ostream& os, const pair<A, B>& p) { return os << '(' << p.first << ' ' << p.second << ')'; }",
+      "template <typename X, typename T = typename enable_if<!is_same<X, string>::value, typename X::value_type>::type>  ostream& operator<<(ostream& o, const X& v) { string s;  for (const T& x : v) o << s << x, s = \" \";  return o; }",
+      "void deb() { cout << \"\\n\"; }",
+      "template <typename Head, typename... Tail>void deb(Head H, Tail... T){cout << H; if (sizeof...(T) > 0) cout << ' '; deb(T...);}",
+      "#ifdef LOCAL",
+      "#define dbg(...) cout << \"[\" << #__VA_ARGS__ << \"]:\", deb(__VA_ARGS__)",
+      "#else",
+      "#define dbg(...)",
+      "#endif",
+      "// clang-format on",
+      "",
+      "int32_t main() {",
+      "\tios_base::sync_with_stdio(false);",
+      "\tcin.tie(NULL);",
+      "\t$0",
+      "\treturn 0;",
+      "}"
+    ],
+    "description": "CP Template"
+  },
+  "Infinity": {
+    "prefix": "inff",
+    "body": [
+      "const ll INF = 0x7f7f7f7f7f7f7f7f;",
+      "const int inf = 0x7f7f7f7f;"
+    ]
+  },
+  "Debug": {
+    "prefix": "dbgg",
+    "body": [
+      "template<typename A, typename B> ostream& operator<<(ostream &os, const pair<A, B> &p) { return os << '(' << p.first << \",\" << p.second << ')'; }",
+      "template<typename X,typename T=typename enable_if<!is_same<X,string>::value,typename X::value_type>::type>ostream& operator<<(ostream &o,const X &v){o<<'{';string s;for(const T &x:v)o<<s<<x,s=\", \";return o<<'}';}",
+      "void deb() { cout << \"\\n\"; }",
+      "template <typename Head, typename... Tail>void deb(Head H, Tail... T){cout << H; if (sizeof...(T) > 0) cout << ' '; deb(T...);}",
+      "#ifdef LOCAL",
+      "#define dbg(...) cerr << \"[\" << #__VA_ARGS__ << \"]:\", deb(__VA_ARGS__)",
+      "#else",
+      "#define dbg(...)",
+      "#endif",
+      ""
+    ],
+    "description": "Adds debug statements"
+  },
+  "CP Template-Google Code Jam": {
+    "prefix": "vsgcj",
+    "body": [
+      "#include <bits/stdc++.h>",
+      "using namespace std;",
+      "// clang-format off",
+      "template <typename A, typename B> ostream& operator<<(ostream& os, const pair<A, B>& p) { return os << '(' << p.first << ' ' << p.second << ')'; }", 
+      "template <typename X, typename T = typename enable_if<!is_same<X, string>::value, typename X::value_type>::type> ostream& operator<<(ostream& o, const X& v) { string s; for (const T& x : v) o << s << x, s = \" \"; return o; }",
+      "void deb() { cout << \"\\n\"; }",
+      "template <typename Head, typename... Tail> void deb(Head H, Tail... T) { cout << H; if (sizeof...(T) > 0) cout << ' '; deb(T...); }",
+      "#ifdef LOCAL",
+      "#define dbg(...) cout << \"[\" << #__VA_ARGS__ << \"]:\", deb(__VA_ARGS__)",
+      "#else",
+      "#define dbg(...)",
+      "#endif",
+      "// clang-format on",
+      "",
+      "void solve(int esac) {",
+      "\t$0",
+      "\tcout << \"Case \" << esac << \": \" << \"put answer here\" << \"\\n\";",
+      "}",
+      "",
+      "int32_t main() {",
+      "\tios_base::sync_with_stdio(false);",
+      "\tcin.tie(NULL);",
+      "\tint T = 1;",
+      "\tcin >> T;",
+      "\tfor (int i = 1; i <= T; i++) solve(i);",
+      "\treturn 0;",
+      "}"
+    ],
+    "description": "CP Template-Google Code Jam"
+  },
+  "vi": {
+    "prefix": "vi",
+    "body": "vector<int> $0",
+    "description": "vi"
+  },
+  "vll": {
+    "prefix": "vll",
+    "body": "vector<ll> $0",
+    "description": "vll"
+  },
+  "vvi": {
+    "prefix": "vvi",
+    "body": "vector<vector<int>> $0",
+    "description": "vvi"
+  },
+  "vvll": {
+    "prefix": "vvll",
+    "body": "vector<vector<ll>> $0",
+    "description": "vvll"
+  },
+  "vpii": {
+    "prefix": "vpii",
+    "body": "vector<pair<int, int>> $0",
+    "description": "vpii"
+  },
+  "pii": {
+    "prefix": "pii",
+    "body": "pair<int, int> $0",
+    "description": "pii"
+  },
+  "mii": {
+    "prefix": "mii",
+    "body": "map<int, int> $0",
+    "description": "mii"
+  },
+  "pll": {
+    "prefix": "pll",
+    "body": "pair<ll, ll> $0",
+    "description": "pll"
+  },
+  "pb": {
+    "prefix": "pb",
+    "body": "push_back($0)",
+    "description": "push_back"
+  },
+  "gcdll": {
+    "prefix": "gcdll",
+    "body": [
+      "ll gcdll(ll a, ll b) {",
+      "\tif (a == 0) return b;",
+      "\treturn gcd(b%a, a);",
+      "}"
+    ],
+    "description": "gcd for ll"
+  },
+  "sieve": {
+    "prefix": "sieve",
+    "body": [
+      "int sieve_size = $0;",
+      "void sieve() {",
+      "\tvector<bool> prime(sieve_size+10, 1);",
+      "\tprime[0] = prime[1] = false;",
+      "\tfor(int i=2; i<=sieve_size; i++) {",
+      "\t\tif (prime[i] and (ll)i*i <= sieve_size)",
+      "\t\t\tfor(int j = i*i; j<=sieve_size; j+=i) prime[j] = false;",
+      "\t}",
+      "}",
+      ""
+    ],
+    "description": "sieve in O(nlg(lg(n)))"
+  },
+  "all": {
+    "prefix": "Vin",
+    "body": "$1.begin()+1, $1.end()"
+  },
+  "ALL": {
+    "prefix": "vin",
+    "body": "$1.begin(), $1.end()"
+  },
+  "aall": {
+    "prefix": "Ain",
+    "body": "$1+1, $1+$2+1"
+  },
+  "Aall": {
+    "prefix": "ain",
+    "body": "$1, $1+$2"
+  },
+  "rep": {
+    "prefix": "rep",
+    "body": "for (int $1 = $2; $1 < $3; $1++) $0"
+  },
+  "fornn": {
+    "prefix": "ffe",
+    "body": "for (int $1 = $2; $1 <= $3; $1++) $0"
+  },
+  "rforn": {
+    "prefix": [
+      "eiff",
+      "iff"
+    ],
+    "body": "for (int $1=$2; $1 >= $3; $1--) $0"
+  },
+  "iter": {
+    "prefix": "iter",
+    "body": "for (auto& $1 : $2) $0"
+  },
+  "setprec": {
+    "prefix": "setprec",
+    "body": "cout << fixed << setprecision($1)"
+  },
+  "binexp": {
+    "prefix": "libBINPOW",
+    "body": [
+      "const int md = 1e9 + 7;",
+      "long long binpow(long long a, long long b, long long mod = md) {",
+      "\ta %= mod;",
+      "\tlong long res = 1;",
+      "\twhile (b > 0) {",
+      "\t\tif (b & 1)",
+      "\t\t\tres = res * a % mod;",
+      "\t\ta = a * a % mod;",
+      "\t\tb >>= 1;",
+      "\t}",
+      "\treturn res;",
+      "}"
+    ]
+  },
+  "Segment Tree": {
+    "prefix": "libSEGTREE",
+    "body": [
+      "template <typename T>",
+      "struct SegTree {",
+      "\tint size, n, ie;",
+      "\tvector<T> tree;",
+      "\tT(*combine) (T x, T y);",
+      "\t/**",
+      "\t * n -> size of the input array",
+      "\t * it -> identity element/value when query invalid such that combine fn works",
+      "\t *\t\t\talong with it (example: 0 for sum/xor/gcd, +inf for min, -inf for max)",
+      "\t * */",
+      "\tSegTree(int nn, int _ie, T(*_combine)(T x, T y)) {",
+      "\t\tthis->combine = _combine;",
+      "\t\tthis->ie = _ie;",
+      "\t\t// it = ei;",
+      "\t\tsize = 1;",
+      "\t\twhile (size < nn) size *= 2;",
+      "\t\tthis->n = size;",
+      "\t\tsize *= 2;",
+      "\t\tthis->size = size;",
+      "\t\tthis->tree = vector<T>(size);",
+      "\t}",
+      "",
+      "\tvoid init(vector<T> v) {",
+      "\t\tfor (int i = 0; i < (int)v.size(); i++)",
+      "\t\t\ttree[i + n] = v[i];",
+      "\t}",
+      "",
+      "\tvoid build() {",
+      "\t\tfor (int i = n - 1; i > 0; i--)",
+      "\t\t\ttree[i] = combine(tree[2 * i], tree[2 * i + 1]);",
+      "\t}",
+      "",
+      "\tvoid update(int i, T v) {",
+      "\t\ti += n;",
+      "\t\ttree[i] = v;",
+      "\t\twhile (i) {",
+      "\t\t\ti /= 2;",
+      "\t\t\ttree[i] = combine(tree[2 * i], tree[2 * i + 1]);",
+      "\t\t}",
+      "\t}",
+      "",
+      "\tT _query(int l, int r, int x, int lx, int rx) {",
+      "\t\tif (r < lx or l > rx) return ie;",
+      "\t\tif (l <= lx and r >= rx) return tree[x];",
+      "",
+      "\t\tint mx = lx + (rx - lx) / 2;",
+      "\t\treturn combine(_query(l, r, 2 * x, lx, mx), _query(l, r, 2 * x + 1, mx + 1, rx));",
+      "\t}",
+      "",
+      "\tT query(int l, int r) {",
+      "\t\tassert(l <= r);",
+      "\t\treturn _query(l, r, 1, 0, n - 1);",
+      "\t}",
+      "};"
+    ],
+    "description": "Segment Tree"
+  },
+  "DSU": {
+    "prefix": "libDSU",
+    "body": [
+      "struct DSU {",
+      "\tvector<int> U, size;",
+      "\tDSU(int n) {",
+      "\t\tU = vector<int>(n), size = vector<int>(n);",
+      "\t\tfor (int i = 0; i < n; i++) U[i] = i, size[i] = 1;",
+      "\t}",
+      "",
+      "\tint find(int u) {",
+      "\t\twhile (U[u] != u) {",
+      "\t\t\tU[u] = U[U[u]];",
+      "\t\t\tu = U[u];",
+      "\t\t}",
+      "\t\treturn u;",
+      "\t}",
+      "",
+      "\tbool unite(int u, int v) {",
+      "\t\tint pu = find(u);",
+      "\t\tint pv = find(v);",
+      "\t\tif (pu == pv) return false;",
+      "",
+      "\t\tif (size[pu] < size[pv]) swap(pu, pv);",
+      "\t\tU[pv] = pu;",
+      "\t\tsize[pu] += size[pv];",
+      "\t\treturn true;",
+      "\t}",
+      "};",
+      ""
+    ],
+    "description": "DSU"
+  },
+  "zalgo": {
+    "prefix": "libZFN",
+    "body": [
+      "vector<int> zfunction(string& s) {",
+      "\tint n = (int)s.length();",
+      "\tvector<int> z(n);",
+      "\tfor (int i = 1, l = 0, r = 0; i < n; i++) {",
+      "\t\tif (i <= r)",
+      "\t\t\tz[i] = min(z[i - l], r - i + 1);",
+      "\t\twhile (i + z[i] < n and s[i + z[i]] == s[z[i]]) ++z[i];",
+      "\t\tif (i + z[i] - 1 > r) l = i, r = i + z[i] - 1;",
+      "\t}",
+      "\treturn z;",
+      "}"
+    ],
+    "description": "zalgo"
+  },
+  "oset": {
+    "prefix": "libOSET",
+    "body": [
+      "#include <ext/pb_ds/assoc_container.hpp>",
+      "#include <ext/pb_ds/tree_policy.hpp>",
+      "using namespace __gnu_pbds;",
+      "template<typename T> using omset = tree<T, null_type,less<T>, rb_tree_tag,tree_order_statistics_node_update>;"
+    ]
+  },
+  "omultiset": {
+    "prefix": "libOMULTISET",
+    "body": [
+      "#include <ext/pb_ds/assoc_container.hpp>",
+      "#include <ext/pb_ds/tree_policy.hpp>",
+      "using namespace __gnu_pbds;",
+      "template<typename T> using omset = tree<T, null_type,less_equal<T>, rb_tree_tag,tree_order_statistics_node_update>;",
+      "// remember to compile without -DGLIB something for less_equal"
+    ]
+  },
+  "combinatorics": {
+    "prefix": "libCOMBI",
+    "body": [
+      "#define int long long",
+      "const int N = 1e6;",
+      "const int md = 1e9 + 7;",
+      "vector<int> f(N);",
+      "void initF() {",
+      "\tf[0] = 1;",
+      "\tfor (int i = 1; i < N; i++) f[i] = f[i - 1] * i % md;",
+      "}",
+      "",
+      "long long binpow(long long a, long long b, long long mod = md) {",
+      "\ta %= mod;",
+      "\tlong long res = 1;",
+      "\twhile (b > 0) {",
+      "\t\tif (b & 1)",
+      "\t\t\tres = res * a % mod;",
+      "\t\ta = a * a % mod;",
+      "\t\tb >>= 1;",
+      "\t}",
+      "\treturn res;",
+      "}",
+      "",
+      "int inv(int n) {",
+      "\treturn binpow(n, md - 2);",
+      "}",
+      "",
+      "int ncr(int n, int r) {",
+      "\tif (n < r) return 0;",
+      "\t\treturn f[n] * inv(f[r]) % md * inv(f[n - r]) % md;",
+      "}",
+      "",
+      "\tinitF(); // delete and paste in main()"
+    ]
+  }
+}

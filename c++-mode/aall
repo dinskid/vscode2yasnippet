@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: aall
+# key: Ain
+# --
+$1+1, $1+$2+1

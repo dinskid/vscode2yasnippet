@@ -1,0 +1,35 @@
+# -*- mode: snippet -*-
+# name: combinatorics
+# key: libCOMBI
+# --
+#define int long long
+const int N = 1e6;
+const int md = 1e9 + 7;
+vector<int> f(N);
+void initF() {
+	f[0] = 1;
+	for (int i = 1; i < N; i++) f[i] = f[i - 1] * i % md;
+}
+
+long long binpow(long long a, long long b, long long mod = md) {
+	a %= mod;
+	long long res = 1;
+	while (b > 0) {
+		if (b & 1)
+			res = res * a % mod;
+		a = a * a % mod;
+		b >>= 1;
+	}
+	return res;
+}
+
+int inv(int n) {
+	return binpow(n, md - 2);
+}
+
+int ncr(int n, int r) {
+	if (n < r) return 0;
+		return f[n] * inv(f[r]) % md * inv(f[n - r]) % md;
+}
+
+	initF(); // delete and paste in main()

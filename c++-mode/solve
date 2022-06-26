@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: solve
+# key: libSOLVE
+# --
+auto solve = [&]() -> void {
+	$0
+}

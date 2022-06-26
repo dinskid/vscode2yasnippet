@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: solve fn
+# key: fnSOLVE
+# --
+void solve() {
+	$0
+}

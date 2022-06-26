@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: sieve
+# key: sieve
+# --
+int sieve_size = $0;
+void sieve() {
+	vector<bool> prime(sieve_size+10, 1);
+	prime[0] = prime[1] = false;
+	for(int i=2; i<=sieve_size; i++) {
+		if (prime[i] and (ll)i*i <= sieve_size)
+			for(int j = i*i; j<=sieve_size; j+=i) prime[j] = false;
+	}
+}

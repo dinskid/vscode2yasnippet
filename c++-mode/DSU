@@ -1,0 +1,30 @@
+# -*- mode: snippet -*-
+# name: DSU
+# key: libDSU
+# --
+struct DSU {
+	vector<int> U, size;
+	DSU(int n) {
+		U = vector<int>(n), size = vector<int>(n);
+		for (int i = 0; i < n; i++) U[i] = i, size[i] = 1;
+	}
+
+	int find(int u) {
+		while (U[u] != u) {
+			U[u] = U[U[u]];
+			u = U[u];
+		}
+		return u;
+	}
+
+	bool unite(int u, int v) {
+		int pu = find(u);
+		int pv = find(v);
+		if (pu == pv) return false;
+
+		if (size[pu] < size[pv]) swap(pu, pv);
+		U[pv] = pu;
+		size[pu] += size[pv];
+		return true;
+	}
+};

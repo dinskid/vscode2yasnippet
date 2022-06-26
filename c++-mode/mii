@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: mii
+# key: mii
+# --
+map<int, int> $0

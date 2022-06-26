@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: ALL
+# key: vin
+# --
+$1.begin(), $1.end()

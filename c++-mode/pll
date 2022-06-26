@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: pll
+# key: pll
+# --
+pair<ll, ll> $0

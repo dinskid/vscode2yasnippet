@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: vvi
+# key: vvi
+# --
+vector<vector<int>> $0

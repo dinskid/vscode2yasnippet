@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: vll
+# key: vll
+# --
+vector<ll> $0

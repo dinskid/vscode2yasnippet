@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: Infinity
+# key: inff
+# --
+const ll INF = 0x7f7f7f7f7f7f7f7f;
+const int inf = 0x7f7f7f7f;
